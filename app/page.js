@@ -13,6 +13,13 @@ export default function home() {
       </div>
     )
   }
+    const Outercomp=()=>{
+    return(
+      <div>
+        <h1>Outer component</h1>
+      </div>
+    )
+  }
   return (
     <div>
       <h3>
@@ -23,6 +30,7 @@ export default function home() {
       <button onClick={() => fruit()}>click me</button>
       <Innercomp/>
       {Innercomp()}
+      <Outercomp/>
     </div>
   );
 }
